@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="H0L-Y4-Qgh">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--AudioRecAndPlay-->
+        <scene sceneID="EoF-gT-kLL">
+            <objects>
+                <controller identifier="AudioRecAndPlay" backgroundImage="bg" hidesWhenLoading="NO" id="H0L-Y4-Qgh" userLabel="AudioRecAndPlay" customClass="AudioRecAndPlayInterfaceController" customModule="watchOS2Sampler_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="left" backgroundImage="selected" id="dOz-9f-0pM">
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                            <connections>
+                                <action selector="recBtnTapped" destination="H0L-Y4-Qgh" id="BRf-Xf-sSR"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="PLAY" id="yDe-7e-cR3">
+                            <connections>
+                                <action selector="playBtnTapped" destination="H0L-Y4-Qgh" id="9Ss-g3-AHa"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <color key="backgroundColor" red="0.33333333333333331" green="0.33247485152482292" blue="0.09653895610528343" alpha="1" colorSpace="calibratedRGB"/>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="231" y="318.25"/>
+        </scene>
+        <!--Glance-->
+        <scene sceneID="TUc-lH-D4A">
+            <objects>
+                <glanceController identifier="Glance" id="mNV-Kw-KP6" customClass="GlanceController" customModule="watchOS2Sampler_WatchKit_Extension">
+                    <items>
+                        <group alignment="left" id="zVr-in-poa">
+                            <items>
+                                <imageView height="1" alignment="left" id="vKo-c4-qlz"/>
+                            </items>
+                        </group>
+                        <group alignment="left" id="ND7-kf-f0S">
+                            <items>
+                                <imageView width="121" height="1" alignment="left" isAccessibilityElement="YES" image="galance_icon" id="I3N-TP-5lu"/>
+                            </items>
+                        </group>
+                    </items>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="231" y="561"/>
+        </scene>
+    </scenes>
+</document>
